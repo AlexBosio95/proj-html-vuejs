@@ -11,18 +11,9 @@
 </template>
 
 <script>
-import Home from './Home.vue';
-import Mission from './Mission.vue';
-import Causes from './Causes.vue';
-import Journal from './Journal.vue';
 
 export default {
-    components:{
-        Home,
-        Mission,
-        Causes,
-        Journal,
-    },
+
     data: function(){
         return{
             navItems: [
