@@ -9,7 +9,7 @@
         <span class="d-inline-block w-100 text-center">Think Big. Act Bigger.</span>
       
 
-      <div class="d-flex">
+      <div class="d-flex justify-content-center cards-container">
 
         <Card v-for="(card, index) in cardData" :key="index"
 
@@ -47,21 +47,21 @@ export default {
 
                 },
                 {
-                    icon: '',
+                    icon: 'fa-solid fa-stethoscope',
                     title: 'Vaccinations',
                     desc: 'Nullam convallis, orci in congue aliquet, diam mauris cursus urna, Id maximus lectus magna maximus.',
                     btnText: 'Learn More'
 
                 },
                 {
-                    icon: '',
+                    icon: 'fa-solid fa-graduation-cap',
                     title: 'Education',
                     desc: 'Nullam convallis, orci in congue aliquet, diam mauris cursus urna, Id maximus lectus magna maximus.',
                     btnText: 'Learn More'
 
                 },
                 {
-                    icon: '',
+                    icon: 'fa-solid fa-wheat-awn',
                     title: 'Farming',
                     desc: 'Nullam convallis, orci in congue aliquet, diam mauris cursus urna, Id maximus lectus magna maximus.',
                     btnText: 'Learn More'
@@ -83,6 +83,7 @@ export default {
         background-image: url('../assets/charity/images/home-content-bg-2.jpg');
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
 
         h3{
             color: $white;
@@ -99,6 +100,11 @@ export default {
 
         span{
             color: $white;
+        }
+
+        .cards-container{
+            padding-top: 5rem;
+            padding-bottom: 7rem;
         }
 
     }
