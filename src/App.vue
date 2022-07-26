@@ -24,4 +24,9 @@ export default {
 
 <style lang="scss">
 @import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
 </style>
