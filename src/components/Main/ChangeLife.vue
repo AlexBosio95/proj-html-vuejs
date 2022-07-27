@@ -38,13 +38,15 @@ export default {
                     {
                         text: 'volunteer',
                         link: '#',
-                        isClick: false
+                        isClick: false,
+                        isCurrent: false
                     },
 
                     {
                         text: 'donate now',
                         link: '#',
-                        isClick: false
+                        isClick: false,
+                        isCurrent: false
                     }
 
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button>{{text}}</button>
+        <button :class="{'donate' : (isCurrent)}">{{text}}</button>
         
     </div>
   
@@ -10,6 +10,7 @@
 export default {
     props:{
         text: String,
+        isCurrent: Boolean,
     }
 
 }
@@ -27,5 +28,11 @@ export default {
         text-transform: uppercase;
         margin: 0 1.5rem;
     }
+
+    .donate{
+            color: $goldenrod;
+            border: 2px solid $goldenrod;
+
+        }
 
 </style>

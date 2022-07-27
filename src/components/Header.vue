@@ -15,8 +15,13 @@
                 <div>
                     <span class="d-inline-block">As long as poverty, injustice & inequality persist, none of us can truly rest</span>
                 </div>
-                <button class="ms-btn">OUR MISSION</button>
-                <button class="ms-btn donate">DONATE NOW</button>
+
+                <div class="d-flex justify-content-center mt-5">
+                 <ButtonBord v-for="(button, index) in dataButton" :key="index" 
+                 :text = 'button.text'
+                 :isCurrent = 'button.isCurrent'
+                 />
+                </div>
             </div>
         </div>
         
@@ -26,11 +31,36 @@
 
 <script>
 import NavBar from './Header/NavBar.vue';
+import ButtonBord from './common/ButtonBord.vue';
 
 
 export default {
     components: {
         NavBar,
+        ButtonBord,
+    },
+
+    data: function(){
+        return{
+            dataButton: [
+                    {
+                        text: 'our mission',
+                        link: '#',
+                        isClick: false,
+                        isCurrent: false
+                    },
+
+                    {
+                        text: 'donate now',
+                        link: '#',
+                        isClick: false,
+                        isCurrent: true
+                    }
+
+
+                ]
+        }
+        
     }
 
 }
@@ -70,9 +100,7 @@ header{
             font-size: 3rem;
         }
 
-        .donate{
-            color: $goldenrod;
-        }
+        
     }
 }
 
