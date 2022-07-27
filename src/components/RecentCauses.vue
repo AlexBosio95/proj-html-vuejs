@@ -3,11 +3,13 @@
             <Title 
             :dataTitle="dataTitle"/>
 
+
             <div class="container-box">
+
                 <BoxImage v-for="(image, index) in dataImage" :key="index"
 
-                :urlImg = 'image.urlImg'
-                :alt = 'image.alt'
+                :pathImg = 'image.pathImg'
+                :alt = 'image.alt' 
                 />
 
             </div>
@@ -35,19 +37,19 @@ export default {
 
             dataImage: [
                 {
-                    urlImg: '../assets/charity/images/avada-charity-fair-trade-featured-600x450.jpg',
+                    pathImg: 'avada-charity-fair-trade-featured-600x450.jpg',
                     alt: 'charity-fair'
                 },
                 {
-                    urlImg: '../assets/charity/images/avada-charity-farming-featured-600x450.jpg',
+                    pathImg: 'avada-charity-farming-featured-600x450.jpg',
                     alt: 'charity-farming'
                 },
                 {
-                    urlImg: '../assets/charity/images/avada-charity-shelter-featured-600x450.jpg',
+                    pathImg: 'avada-charity-shelter-featured-600x450.jpg',
                     alt: 'charity-shelter'
                 },
                 {
-                    urlImg: '../assets/charity/images/avada-charity-vaccines-featured-600x450.jpg',
+                    pathImg: 'avada-charity-vaccines-featured-600x450.jpg',
                     alt: 'charity-vaccines'
                 },
             ]
@@ -66,6 +68,7 @@ export default {
     .container-box{
         display: flex;
         justify-content: center;
+        padding: 4rem 0rem;
     }
 
 </style>

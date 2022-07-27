@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <img :src="urlImg" :alt="alt">
+    <div class="box">
+        <img :src="require(`../assets/charity/images/${pathImg}`)" :alt="alt">
     </div>
   
 </template>
@@ -8,9 +8,15 @@
 <script>
 export default {
     props:{
-        urlImg: String,
-        alt: String,
+        pathImg: String,
+        alt: String
+    },
+    methods:{
+        getpath(){
+            console.log(this.pathImg)
+        }
     }
+    
 
 }
 </script>
@@ -19,10 +25,14 @@ export default {
 
 @import '../style/variables.scss'; 
 
-img{
-    width: calc(100% / 4 - 1rem);
+.box{
+    width: calc(100% / 4 - 0.8rem);
     margin: 0.5rem;
-    height: 200px;
+
+    img{
+    width: 100%;
 }
+}
+
 
 </style>
