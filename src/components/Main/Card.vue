@@ -4,7 +4,8 @@
         <i :class="(icon)"></i>
         <h5 class="mt-3">{{title}}</h5>
         <p>{{desc}}</p>
-        <button>{{btnText}}</button>
+        <ButtonGold 
+            :btnText = 'btnText'/>
         
     </div>
 
@@ -12,7 +13,13 @@
 </template>
 
 <script>
+import ButtonGold from '../common/ButtonGold.vue'
+
 export default {
+
+    components:{
+        ButtonGold,
+    },
 
     props:{
         icon: String,

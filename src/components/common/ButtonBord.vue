@@ -28,8 +28,8 @@ export default {
         margin: 0 1.5rem;
 
         &:hover{
-            background-color: $white;
-            color: $goldenrod;
+            background-color: $putty;
+            color: $white;
             border: 2px solid $goldenrod;
         }
     }

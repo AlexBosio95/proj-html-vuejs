@@ -1,9 +1,10 @@
 <template>
     <nav >
         <ul class="d-flex align-items-center">
-            <li :class="{'active' : (item.isClick)}" v-for="(item, index) in navItems" :key="index">{{item.text}}</li>
+            <li :class="{'active' : (item.isClick)}" v-for="(item, index) in navItems" :key="index" @click="getActive(index)">{{item.text}} </li>
             <li>
-                <button class="">donate</button>
+                <ButtonGold 
+                :dataButton = 'dataButton'/>
             </li>
         </ul>
     </nav>
@@ -12,7 +13,13 @@
 
 <script>
 
+import ButtonGold from '../common/ButtonGold.vue'
+
 export default {
+
+    components:{
+        ButtonGold,
+    },
 
     data: function(){
         return{
@@ -37,9 +44,28 @@ export default {
                     isClick: false,
                     link: '',
                 },
-            ]
+            ],
+            dataButton: 
+                    {
+                        text: 'donate',
+                        link: '#',
+                        isClick: false,
+                        isCurrent: false
+                    },
+                
 
         }
+    },
+    methods: {
+
+     getActive(current){
+        this.navItems.forEach(element => {
+            element.isClick = false
+        });
+
+        this.navItems[current].isClick = !this.navItems[current].isClick
+
+    }    
     }
 
 }

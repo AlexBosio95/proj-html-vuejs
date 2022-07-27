@@ -9,7 +9,10 @@
                     <p>Curabitur non mi et turpis pharetra vulputate. Cras consequat, risus nec commodo vehicula, nisi est laoreet leo, ac convallis nisi nibh id velit. Aliquam mattis metus a nisi pretium.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh vestibulum, laoreet ipsum quis, vestibulum nisi. Curabitur non mi et turpis pharetra vulputate. Ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh vestibulum, laoreet ipsum quis, vestibulum nisi.</p>
                     <p>Curabitur non mi et turpis pharetra vulputate. Cras consequat, risus nec commodo vehicula, nisi est laoreet leo, ac convallis nisi nibh id velit.</p>
-                    <button>OUR MISSION</button>
+
+                    <ButtonGold 
+                        :dataButton = 'dataButton'/>
+                    
                 </div>
             </div>
             <div class="col-4">
@@ -34,7 +37,12 @@
 </template>
 
 <script>
+
+import ButtonGold from '../common/ButtonGold.vue'
 export default {
+    components:{
+        ButtonGold,
+    },
     data: function(){
         return{
             infoData: [
@@ -56,7 +64,14 @@ export default {
                     icon: 'fa-solid fa-dollar-sign'
 
                 },
-            ]
+            ],
+            dataButton: 
+                    {
+                        text: 'our mission',
+                        link: '#',
+                        isClick: false,
+                        isCurrent: false
+                    },
         }
     }
 
