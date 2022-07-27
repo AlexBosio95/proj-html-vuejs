@@ -23,7 +23,7 @@ export default {
         background-color: transparent;
         border: 2px solid $white;
         color: $white;
-        padding: 0.5rem 1rem;
+        padding: 0.3rem 1.3rem;
         text-transform: uppercase;
         margin: 0 1.5rem;
     }
