@@ -1,18 +1,24 @@
 <template>
-    <div class="container">
-            <Title 
-            :dataTitle="dataTitle"/>
+    <div>
+
+        <div class="container">
+                <Title 
+                :dataTitle="dataTitle"/>
 
 
-            <div class="container-box">
+                <div class="container-box">
 
-                <BoxImage v-for="(image, index) in dataImage" :key="index"
+                    <BoxImage v-for="(image, index) in dataImage" :key="index"
 
-                :pathImg = 'image.pathImg'
-                :alt = 'image.alt' 
-                />
+                    :pathImg = 'image.pathImg'
+                    :alt = 'image.alt' 
+                    />
 
-            </div>
+                </div>
+
+        </div>
+                <button>VIEW ALL OUR CAUSES</button>
+
     </div>
     
 </template>
@@ -69,6 +75,14 @@ export default {
         display: flex;
         justify-content: center;
         padding: 4rem 0rem;
+    }
+
+    button{
+        width: 100%;
+        border: none;
+        padding: 3rem 0rem;
+        background-color: $Burnt-sienna;
+        color: $white;
     }
 
 </style>
