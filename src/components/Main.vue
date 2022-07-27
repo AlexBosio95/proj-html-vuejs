@@ -5,6 +5,7 @@
       <OurValues />
       <RecentCauses />
       <LatestArticles />
+      <ChangeLife />
 
   </main>
 </template>
@@ -14,6 +15,7 @@ import EveryMoment from './EveryMoment.vue';
 import OurValues from './OurValues.vue';
 import RecentCauses from './RecentCauses.vue';
 import LatestArticles from './LatestArticles.vue';
+import ChangeLife from './ChangeLife.vue';
 
 export default {
     components:{
@@ -21,6 +23,7 @@ export default {
         OurValues,
         RecentCauses,
         LatestArticles,
+        ChangeLife,
     }
 
 }

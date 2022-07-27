@@ -28,7 +28,7 @@
             </div>
         </div>
 
-            <button>view all our causes</button>
+            <button>view all our articles</button>
 
       </div>
   </div>
@@ -131,6 +131,7 @@ export default {
         background-color: $Burnt-sienna;
         color: $white;
         margin-top: 4rem;
+        text-transform: uppercase;
     }
 }
 
