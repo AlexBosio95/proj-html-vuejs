@@ -2,7 +2,7 @@
 
     <div class="ms_card">
         <i :class="(icon)"></i>
-        <h5 class="mt-2">{{title}}</h5>
+        <h5 class="mt-3">{{title}}</h5>
         <p>{{desc}}</p>
         <button>{{btnText}}</button>
         
@@ -47,7 +47,6 @@ export default {
 
             h5{
                 font-size: 1rem;
-                margin-top: 0.5rem;
             }
 
             button{
@@ -55,7 +54,9 @@ export default {
                 background-color: $goldenrod;
                 text-transform: uppercase;
                 color: $white;
-                padding: 0.2rem 1rem;
+                padding: 0.3rem 1rem;
+                margin-top: 0.5rem;
+                font-size: 0.8rem;
             }
 
     }

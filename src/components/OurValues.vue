@@ -1,13 +1,13 @@
 <template>
   <div class="our-values">
+
       <div class="container">
 
-        <h3 class="text-center">OUR VALUES</h3>
-        <div class="text-container d-flex justify-content-center">
-            <div class="line-title"></div>
-        </div>
-        <span class="d-inline-block w-100 text-center">Think Big. Act Bigger.</span>
-      
+        <Title class="title"
+        
+          :dataTitle = 'dataTitle'
+        />
+
 
       <div class="d-flex justify-content-center cards-container">
 
@@ -30,10 +30,12 @@
 
 <script>
 import Card from './Card.vue';
+import Title from './Title.vue';
 
 export default {
     components:{
         Card,
+        Title,
     },
     
     data: function(){
@@ -68,7 +70,13 @@ export default {
 
                 },
                 
-            ]
+            ],
+            dataTitle: 
+                {
+                    title: 'OUR VALUES',
+                    subtitle: 'Think Big. Act Bigger.'
+                }
+            
         }
     }
 
@@ -85,28 +93,16 @@ export default {
         background-position: center;
         background-repeat: no-repeat;
 
-        h3{
-            color: $white;
-            padding-top: 5rem;
-        }
-
-        .line-title {
-            width: 20%;
-            background-color: $goldenrod;
-            height: 0.2rem;
-            margin-bottom: 2rem;
-            margin-top: 1rem;
-        }
-
-        span{
-            color: $white;
-        }
-
         .cards-container{
             padding-top: 5rem;
             padding-bottom: 7rem;
         }
 
+
+    }
+
+    .title{
+        color: $white;
     }
 
 </style>
