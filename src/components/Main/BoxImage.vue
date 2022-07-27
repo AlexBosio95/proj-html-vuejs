@@ -1,6 +1,6 @@
 <template>
     <div class="box">
-        <img :src="require(`../assets/charity/images/${pathImg}`)" :alt="alt">
+        <img :src="require(`../../assets/charity/images/${pathImg}`)" :alt="alt">
     </div>
   
 </template>
@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../style/variables.scss'; 
+@import '../../style/variables.scss'; 
 
 .box{
     width: calc(100% / 4 - 0.8rem);

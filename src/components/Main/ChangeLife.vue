@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import Title from './Title.vue';
-import ButtonBord from './ButtonBord.vue';
+import Title from '../common/Title.vue';
+import ButtonBord from '../common/ButtonBord.vue';
 
 export default {
      components:{
@@ -56,10 +56,10 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../style/variables.scss'; 
+@import '../../style/variables.scss'; 
 
 .bg-change-life{
-    background-image: url('../assets/charity/images/home-footer.jpg');
+    background-image: url('../../assets/charity/images/home-footer.jpg');
     background-size: cover;
     background-position: center;
     padding: 2rem 0 8rem 0;

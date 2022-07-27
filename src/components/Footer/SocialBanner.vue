@@ -53,7 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../style/variables.scss'; 
+@import '../../style/variables.scss'; 
 
   .bg-gray{
     background-color: $footer;

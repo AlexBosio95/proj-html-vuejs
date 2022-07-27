@@ -9,8 +9,8 @@
 
 <script>
 
-import BannerLogo from './BannerLogo.vue';
-import SocialBanner from './SocialBanner.vue';
+import BannerLogo from './Footer/BannerLogo.vue';
+import SocialBanner from './Footer/SocialBanner.vue';
 
 
 export default {

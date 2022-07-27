@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../style/variables.scss'; 
+@import '../../style/variables.scss'; 
 
     .ms_card{
         width: calc(100% / 4 - 0.6rem);

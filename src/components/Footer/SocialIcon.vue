@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../style/variables.scss'; 
+@import '../../style/variables.scss'; 
 
 .circle-icon{
     background-color: $white;

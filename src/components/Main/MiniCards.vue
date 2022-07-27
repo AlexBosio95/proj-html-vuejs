@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex horizontal-card">
         <div class="picture">
-            <img :src="require(`../assets/charity/images/${imgPath}`)" alt="">
+            <img :src="require(`../../assets/charity/images/${imgPath}`)" alt="">
         </div>
 
         <div class="description">
@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../style/variables.scss'; 
+@import '../../style/variables.scss'; 
 
     .horizontal-card{
         height: 95px;

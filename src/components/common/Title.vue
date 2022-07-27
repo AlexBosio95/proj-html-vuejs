@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../style/variables.scss'; 
+@import '../../style/variables.scss'; 
 
         h3{
             padding-top: 5rem;
