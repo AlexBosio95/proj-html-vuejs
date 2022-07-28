@@ -7,7 +7,7 @@
         <div class="row row-cols-2 gx-4">
             <div class="col">
                 <div class="ms_card">
-                    <img :src="require(`../../assets/charity/images/${dataBigSlide.imgPath}`)" alt="">
+                    <img :src="require(`@/assets/charity/images/${dataBigSlide.imgPath}`)" alt="">
                     <div class="box-text">
                         <h6>{{dataBigSlide.title}}</h6>
                         <p>{{dataBigSlide.text}}</p>
@@ -36,7 +36,7 @@
 
 <script>
 
-import Title from '../common/Title.vue';
+import Title from '../../common/Title.vue';
 import MiniCards from './MiniCards.vue';
 
 export default {
@@ -99,7 +99,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../../style/variables.scss'; 
+@import '@/style/variables.scss'; 
 .card-container{
     padding: 5rem 13rem;
 

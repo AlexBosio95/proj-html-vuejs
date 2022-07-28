@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import ButtonGold from '../common/ButtonGold.vue'
+import ButtonGold from '../../common/ButtonGold.vue'
 
 export default {
 
@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../../style/variables.scss'; 
+@import '@/style/variables.scss'; 
 
     .ms_card{
         width: calc(100% / 4 - 0.6rem);

@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row row-cols-2">
                 <div class="col-5 logo-container" id="head">
-                    <img src="../assets/charity/images/avada-charity-logo.png" alt="">
+                    <img src="@/assets/charity/images/avada-charity-logo.png" alt="">
                 </div>
                 <div class="col-7 d-flex justify-content-end">
                     <NavBar />
@@ -68,10 +68,10 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../style/variables.scss'; 
+@import '@/style/variables.scss'; 
 
 header{
-    background-image: url('../assets/charity/images/home-page-slider.jpg');
+    background-image: url('@/assets/charity/images/home-page-slider.jpg');
     background-size: cover;
     background-position: center;
     height: 46rem;

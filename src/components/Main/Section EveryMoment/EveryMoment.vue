@@ -38,7 +38,7 @@
 
 <script>
 
-import ButtonGold from '../common/ButtonGold.vue'
+import ButtonGold from '../../common/ButtonGold.vue'
 export default {
     components:{
         ButtonGold,
@@ -80,7 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../../style/variables.scss'; 
+@import '@/style/variables.scss'; 
 
     .box-text{
         padding: 5rem;
@@ -103,7 +103,7 @@ export default {
 
     .box-info{
         height: 100%;
-        background-image: url('../../assets/charity/images/home-content-bg-1.jpg');
+        background-image: url('@/assets/charity/images/home-content-bg-1.jpg');
         background-size: cover;
         background-position: center;
         text-align: center;

@@ -1,6 +1,6 @@
 <template>
     <div class="container text-center py-4">
-        <img src="../../assets/charity/images/avada-charity-mobile-logo-retina.png" alt="logo">
+        <img src="@/assets/charity/images/avada-charity-mobile-logo-retina.png" alt="logo">
     </div>
   
 </template>

@@ -30,7 +30,7 @@
 
 <script>
 import Card from './Card.vue';
-import Title from '../common/Title.vue';
+import Title from '../../common/Title.vue';
 
 export default {
     components:{
@@ -85,10 +85,10 @@ export default {
 
 <style lang="scss">
 
-@import '../../style/variables.scss'; 
+@import '@/style/variables.scss'; 
 
     .our-values{
-        background-image: url('../../assets/charity/images/home-content-bg-2.jpg');
+        background-image: url('@/assets/charity/images/home-content-bg-2.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

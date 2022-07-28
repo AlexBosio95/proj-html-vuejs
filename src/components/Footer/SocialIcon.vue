@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../../style/variables.scss'; 
+@import '@/style/variables.scss'; 
 
 .circle-icon{
     background-color: $white;
@@ -26,6 +26,7 @@ export default {
     border-radius: 50%;
     margin: 0.5rem;
     position: relative;
+    cursor: pointer;
 
     &:hover{
         transform: scale(1.15);

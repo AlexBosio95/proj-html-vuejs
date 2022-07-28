@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import Title from '../common/Title.vue';
+import Title from '../../common/Title.vue';
 import BoxImage from './BoxImage.vue';
 
 export default {
@@ -69,7 +69,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '../../style/variables.scss'; 
+@import '@/style/variables.scss'; 
 
     .container-box{
         display: flex;
