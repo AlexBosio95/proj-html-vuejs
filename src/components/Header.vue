@@ -76,6 +76,7 @@ header{
     background-position: center;
     height: 46rem;
     max-height: 46rem;
+    background-attachment: fixed;
 
     .logo-container img{
         height: 3rem;

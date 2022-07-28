@@ -64,6 +64,8 @@ export default {
     background-image: url('../../assets/charity/images/home-footer.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     padding: 2rem 0 8rem 0;
 }
 

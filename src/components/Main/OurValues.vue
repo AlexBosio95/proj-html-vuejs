@@ -92,6 +92,7 @@ export default {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
 
         .cards-container{
             padding-top: 5rem;
