@@ -86,7 +86,7 @@ export default {
         li{
             color: $white;
             display: inline;
-            margin: 0rem 2rem;
+            margin: 0rem 1.5rem;
             text-transform: uppercase;
             cursor: pointer;
 
