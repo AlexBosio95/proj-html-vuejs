@@ -6,13 +6,9 @@
       <div class="card-container">
         <div class="row row-cols-2 gx-4">
             <div class="col">
-                <div class="ms_card">
-                    <img :src="require(`@/assets/charity/images/${dataBigSlide.imgPath}`)" alt="">
-                    <div class="box-text">
-                        <h6>{{dataBigSlide.title}}</h6>
-                        <p>{{dataBigSlide.text}}</p>
-                    </div>
-                </div>
+                    <BigCard 
+                    :dataBigSlide = 'dataBigSlide'/>
+                
             </div>
 
             <div class="col d-flex flex-column justify-content-between">
@@ -38,11 +34,13 @@
 
 import Title from '../../common/Title.vue';
 import MiniCards from './MiniCards.vue';
+import BigCard from './BigCard.vue';
 
 export default {
      components:{
         Title,
         MiniCards,
+        BigCard,
     },
     
     data: function(){
@@ -103,28 +101,7 @@ export default {
 .card-container{
     padding: 5rem 13rem;
 
-    img{
-        height: 18rem;
-        width: 100%;
-        object-fit: cover;
-        border: 1px solid $footer;
-    }
-
-    .box-text{
-        padding: 1rem;
-        border: 1px solid $footer;
-
-        
-            h6{
-                color: $goldenrod;
-                margin: 1rem 0;
-            }
-
-            p{
-                font-size: 0.7rem;
-                line-height: 1.7rem;
-            }
-    }
+   
 
     button{
         width: 100%;
