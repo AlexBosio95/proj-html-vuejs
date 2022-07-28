@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray">
+  <div class="bg-gray position-relative">
     <div class="container text-center py-3">
       <span class="opacity-50">© Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</span>
     </div>
@@ -10,10 +10,9 @@
       :icon = 'social.icon'
       />
     </div>
-
-    
-
-      
+    <div class="arrow-up">
+      <a href="#head"><i class="fa-solid fa-chevron-up mt-2"></i></a>
+    </div>
   </div>
 </template>
 
@@ -63,6 +62,24 @@ export default {
       font-size: 0.6rem;
       color: $gray-chateau;
     }
+
+    .arrow-up{
+      cursor: pointer;
+      position: absolute;
+      right: 2rem;
+      bottom: 0;
+      background-color: $tuna;
+      height: 2rem;
+      width: 3rem;
+      text-align: center;
+      border-radius: 0.2rem 0.2rem 0 0;
+
+      a{
+      color: $white;
+      }
+    }
+
+    
   }
 
 

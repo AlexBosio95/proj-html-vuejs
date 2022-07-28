@@ -1,7 +1,6 @@
 <template>
 <div class="circle-icon">
     <a href=""><i :class="icon"></i></a>
-    
 </div>
   
 </template>
@@ -27,6 +26,11 @@ export default {
     border-radius: 50%;
     margin: 0.5rem;
     position: relative;
+
+    &:hover{
+        transform: scale(1.15);
+        transition: 0.5s;
+    }
 
     i{
         font-size: 1.2rem;

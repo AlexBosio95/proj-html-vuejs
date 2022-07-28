@@ -3,7 +3,7 @@
     <header>
         <div class="container">
             <div class="row row-cols-2">
-                <div class="col logo-container">
+                <div class="col logo-container" id="head">
                     <img src="../assets/charity/images/avada-charity-logo.png" alt="">
                 </div>
                 <div class="col">

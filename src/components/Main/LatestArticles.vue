@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="journal">
       <Title 
       :dataTitle = 'dataTitle'
       />
@@ -107,10 +107,12 @@ export default {
         height: 18rem;
         width: 100%;
         object-fit: cover;
+        border: 1px solid $footer;
     }
 
     .box-text{
         padding: 1rem;
+        border: 1px solid $footer;
 
         
             h6{

@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <div class="container">
+        <div class="container" id="causes">
                 <Title 
                 :dataTitle="dataTitle"/>
 

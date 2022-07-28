@@ -29,5 +29,6 @@ export default {
 body{
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 </style>

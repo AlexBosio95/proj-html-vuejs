@@ -1,7 +1,10 @@
 <template>
     <nav >
         <ul class="d-flex align-items-center">
-            <li :class="{'active' : (item.isClick)}" v-for="(item, index) in navItems" :key="index" @click="getActive(index)">{{item.text}} </li>
+            
+            <li  v-for="(item, index) in navItems" :key="index" >
+                <a :class="{'active' : (item.isClick)}" @click="getActive(index)" :href="`#${item.link}`">{{item.text}}</a>
+            </li>
             <li>
                 <ButtonGold 
                 :dataButton = 'dataButton'/>
@@ -32,17 +35,17 @@ export default {
                 {
                     text: 'Mission',
                     isClick: false,
-                    link: '',
+                    link: 'mission',
                 },
                 {
                     text: 'Causes',
                     isClick: false,
-                    link: '',
+                    link: 'causes',
                 },
                 {
                     text: 'Journal',
                     isClick: false,
-                    link: '',
+                    link: 'journal',
                 },
             ],
             dataButton: 
@@ -93,6 +96,11 @@ export default {
                 border: none;
                 padding: 0.3rem 1rem;
                 text-transform: uppercase;
+            }
+
+            a{
+                color: $white;
+                text-decoration: none;
             }
         }
 

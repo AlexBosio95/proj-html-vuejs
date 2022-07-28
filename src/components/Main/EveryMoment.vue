@@ -3,7 +3,7 @@
 
         <div class="row row-cols-2">
             <div class="col-8">
-                <div class="box-text">
+                <div class="box-text" id="mission">
                     <h2>EVERY MOMENT COUNTS</h2>
                     <div class="line"></div>
                     <p>Curabitur non mi et turpis pharetra vulputate. Cras consequat, risus nec commodo vehicula, nisi est laoreet leo, ac convallis nisi nibh id velit. Aliquam mattis metus a nisi pretium.</p>
