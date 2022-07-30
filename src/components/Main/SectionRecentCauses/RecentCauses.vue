@@ -2,9 +2,9 @@
     <div>
 
         <div class="container" id="causes">
+                <!-- Layout with Title and Description -->
                 <Title 
                 :dataTitle="dataTitle"/>
-
 
                 <div class="container-box">
 

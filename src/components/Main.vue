@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import EveryMoment from './Main/Section EveryMoment/EveryMoment.vue';
-import OurValues from './Main/Section OurValues/OurValues.vue';
-import RecentCauses from './Main/Section RecentCauses/RecentCauses.vue';
-import LatestArticles from './Main/Section LastArticles/LatestArticles.vue';
-import ChangeLife from './Main/Section ChangeLife/ChangeLife.vue';
+import EveryMoment from './Main/SectionEveryMoment/EveryMoment.vue';
+import OurValues from './Main/SectionOurValues/OurValues.vue';
+import RecentCauses from './Main/SectionRecentCauses/RecentCauses.vue';
+import LatestArticles from './Main/SectionLastArticles/LatestArticles.vue';
+import ChangeLife from './Main/SectionChangeLife/ChangeLife.vue';
 
 export default {
     components:{

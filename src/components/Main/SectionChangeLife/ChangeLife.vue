@@ -1,6 +1,7 @@
 <template>
     <div class="bg-change-life">
         <div class="container">
+            <!-- Layout with Title and Description -->
             <Title class="title"
             :dataTitle = 'dataTitle'
             />

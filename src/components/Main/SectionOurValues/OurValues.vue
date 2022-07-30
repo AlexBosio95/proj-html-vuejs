@@ -2,7 +2,8 @@
   <div class="our-values">
 
       <div class="container">
-
+          
+        <!-- Layout with Title and Description -->
         <Title class="title"
         
           :dataTitle = 'dataTitle'

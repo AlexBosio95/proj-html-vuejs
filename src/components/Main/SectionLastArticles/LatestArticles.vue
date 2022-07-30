@@ -1,5 +1,6 @@
 <template>
   <div class="container" id="journal">
+      <!-- Layout with Title and Description -->
       <Title 
       :dataTitle = 'dataTitle'
       />
