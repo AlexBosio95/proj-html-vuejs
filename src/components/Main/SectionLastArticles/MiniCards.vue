@@ -25,7 +25,15 @@ export default {
 
     data: function(){
         return{
-            getFormatString(item){
+
+            
+        }
+        
+
+    },
+    methods: {
+
+        getFormatString(item){
 
                 if(item.length > 20){
                     return item.substr(0,45) + '...'
@@ -37,8 +45,7 @@ export default {
                 if(item.length > 20){
                     return item.substr(0,155) + '...'
                 }
-            }
-        }
+            },
 
     },
 

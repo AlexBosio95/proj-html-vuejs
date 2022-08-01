@@ -31,7 +31,7 @@ export default {
     methods: {
 
         getArticle(){
-          axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=8d1549fdace743848d7f961305b0de09')
+          axios.get('https://newsapi.org/v2/top-headlines?country=it&apiKey=8d1549fdace743848d7f961305b0de09')
           .then((result) =>{
             this.articlesList = result.data.articles
           })

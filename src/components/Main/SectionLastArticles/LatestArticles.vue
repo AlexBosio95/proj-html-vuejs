@@ -91,17 +91,14 @@ export default {
                     title: 'Understanding community complexities',
                     imgPath: 'photo-1444213007800-cff19e1677ac.jpg'
                 },
+        
 
-        
-            
-        }
-    },
-    created(){
-        console.log(this.articlesList)
-        
     }
 
+        
+    }  
 }
+
 </script>
 
 <style lang="scss" scoped>
