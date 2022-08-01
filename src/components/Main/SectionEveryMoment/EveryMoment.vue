@@ -4,7 +4,7 @@
         <div class="row row-cols-2">
             <div class="col-8">
                 <div class="box-text" id="mission">
-                    <h2 @click="getCounter()">EVERY MOMENT COUNTS</h2>
+                    <h2>EVERY MOMENT COUNTS</h2>
                     <div class="line"></div>
                     <p>Curabitur non mi et turpis pharetra vulputate. Cras consequat, risus nec commodo vehicula, nisi est laoreet leo, ac convallis nisi nibh id velit. Aliquam mattis metus a nisi pretium.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh vestibulum, laoreet ipsum quis, vestibulum nisi. Curabitur non mi et turpis pharetra vulputate. Ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh vestibulum, laoreet ipsum quis, vestibulum nisi.</p>
@@ -117,7 +117,6 @@ export default {
                         setInterval(() => {
                         if (element.number > element.cunter) {
                         element.cunter = element.cunter + 3000
-                        console.log(element.cunter)
                         }
     
                         }, interval)
@@ -129,7 +128,7 @@ export default {
                     
                     
                 });
-            }, 2000)
+            }, 1000)
 
      
         },

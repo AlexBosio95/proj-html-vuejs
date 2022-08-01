@@ -2,9 +2,15 @@
   <main>
 
       <EveryMoment />
+      
       <OurValues />
+
       <RecentCauses />
-      <LatestArticles />
+
+      <LatestArticles 
+      :articlesList = 'articlesList'
+      />
+
       <ChangeLife />
 
   </main>
@@ -24,6 +30,9 @@ export default {
         RecentCauses,
         LatestArticles,
         ChangeLife,
+    },
+    props:{
+        articlesList: Array,
     }
 
 }

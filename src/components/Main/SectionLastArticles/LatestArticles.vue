@@ -5,20 +5,21 @@
       :dataTitle = 'dataTitle'
       />
       <div class="card-container">
-        <div class="row row-cols-2 gx-4">
-            <div class="col">
+        <div class="row ">
+            <div class="col-12">
                     <BigCard 
                     :dataBigSlide = 'dataBigSlide'/>
                 
             </div>
 
-            <div class="col d-flex flex-column justify-content-between">
+            <div class="col-12 d-flex flex-column g-4">
 
-                <MiniCards v-for="(data, index) in dataSlide" :key="index"
+                <MiniCards v-for="(article, index) in articlesList" :key="index"
 
-                    :text= 'data.text'
-                    :title= 'data.title'
-                    :imgPath= 'data.imgPath'
+                    :description = 'article.description'
+                    :title = 'article.title'
+                    :urlToImage = 'article.urlToImage'
+                    :url = 'article.url'
                 
                 />
 
@@ -42,6 +43,9 @@ export default {
         Title,
         MiniCards,
         BigCard,
+    },
+    props:{
+        articlesList: Array,
     },
     
     data: function(){
@@ -91,6 +95,10 @@ export default {
         
             
         }
+    },
+    created(){
+        console.log(this.articlesList)
+        
     }
 
 }

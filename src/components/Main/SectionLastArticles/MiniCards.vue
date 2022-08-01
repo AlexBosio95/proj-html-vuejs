@@ -1,12 +1,12 @@
 <template>
     <div class="d-flex horizontal-card">
         <div class="picture">
-            <img :src="require(`@/assets/charity/images/${imgPath}`)" alt="">
+            <img :src="(urlToImage)" alt="">
         </div>
 
         <div class="description">
-            <h6>{{title}}</h6>
-            <p>{{text}}</p>
+            <h6><a :href="url" target="_blank">{{getFormatString(title)}}</a></h6>
+            <p>{{getFormatDescription(description)}}</p>
         </div>
         
     </div>
@@ -17,9 +17,33 @@
 
 export default {
     props:{
-        text: String,
+        description: String,
         title: String,
-        imgPath: String,
+        urlToImage: String,
+        url: String,
+    },
+
+    data: function(){
+        return{
+            getFormatString(item){
+
+                if(item.length > 20){
+                    return item.substr(0,45) + '...'
+                }
+                
+            },
+            getFormatDescription(item){
+
+                if(item.length > 20){
+                    return item.substr(0,155) + '...'
+                }
+            }
+        }
+
+    },
+
+    created(){
+        
     }
 
 }
@@ -30,11 +54,12 @@ export default {
 @import '@/style/variables.scss'; 
 
     .horizontal-card{
-        height: 95px;
+        height: 135px;
+        margin: 0.4rem 0rem;
         
         
         .picture{
-            width: 25%;
+            width: 30%;
 
             img{
                 width: 100%;
@@ -44,10 +69,10 @@ export default {
         }
 
         .description{
-            width: 75%;
+            width: 70%;
             padding-left: 1rem;
 
-                h6{
+                a{
                 color: $goldenrod;
                 }
 
