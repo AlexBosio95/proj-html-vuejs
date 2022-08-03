@@ -39,17 +39,21 @@ import MiniCards from './MiniCards.vue';
 import BigCard from './BigCard.vue';
 
 export default {
-     components:{
+
+    components:{
         Title,
         MiniCards,
         BigCard,
     },
+
     props:{
         articlesList: Array,
     },
     
     data: function(){
         return{
+
+            numberArticlesShow: 5,
 
             dataTitle: 
                 {
@@ -103,7 +107,8 @@ export default {
 
 <style lang="scss" scoped>
 
-@import '@/style/variables.scss'; 
+@import '@/style/variables.scss';
+
 .card-container{
     padding: 5rem 13rem;
 

@@ -26,26 +26,31 @@ export default {
     data: function(){
         return{
 
-            
         }
-        
-
     },
     methods: {
 
         getFormatString(item){
+            if (item != null) {
 
                 if(item.length > 20){
-                    return item.substr(0,45) + '...'
+                    return item.substr(0,65) + '...'
                 }
+            }
+
                 
-            },
-            getFormatDescription(item){
+        },
+
+        getFormatDescription(item){
+
+            if (item != null) {
 
                 if(item.length > 20){
-                    return item.substr(0,155) + '...'
+                    return item.substr(0,145) + '...'
                 }
-            },
+            }
+
+        },
 
     },
 
