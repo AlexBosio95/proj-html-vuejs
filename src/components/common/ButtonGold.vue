@@ -2,7 +2,7 @@
     <div>
         <button>{{gettextButton()}}</button>
     </div>
-  
+    
 </template>
 
 <script>

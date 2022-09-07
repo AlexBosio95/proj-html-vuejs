@@ -17,10 +17,10 @@
                 </div>
 
                 <div class="d-flex justify-content-center mt-5">
-                 <ButtonBord v-for="(button, index) in dataButton" :key="index" 
-                 :text = 'button.text'
-                 :isCurrent = 'button.isCurrent'
-                 />
+                    <ButtonBord v-for="(button, index) in dataButton" :key="index" 
+                    :text = 'button.text'
+                    :isCurrent = 'button.isCurrent'
+                    />
                 </div>
             </div>
         </div>

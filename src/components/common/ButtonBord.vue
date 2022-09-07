@@ -2,7 +2,7 @@
     <div>
         <button :class="{'donate' : (isCurrent)}">{{text}}</button>
     </div>
-  
+
 </template>
 
 <script>
@@ -28,8 +28,7 @@ export default {
         margin: 0 1.5rem;
 
         &:hover{
-            background-color: $putty;
-            color: $white;
+            color: $goldenrod;
             border: 2px solid $goldenrod;
         }
     }
@@ -38,6 +37,10 @@ export default {
             color: $goldenrod;
             border: 2px solid $goldenrod;
 
+            &:hover{
+            color: $white;
+            border: 2px solid $white;
+        }
         }
 
 </style>

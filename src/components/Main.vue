@@ -1,19 +1,19 @@
 <template>
-  <main>
+    <main>
 
-      <EveryMoment />
-      
-      <OurValues />
+        <EveryMoment />
+        
+        <OurValues />
 
-      <RecentCauses />
+        <RecentCauses />
 
-      <LatestArticles 
-      :articlesList = 'articlesList'
-      />
+        <LatestArticles 
+        :articlesList = 'articlesList'
+        />
 
-      <ChangeLife />
+        <ChangeLife />
 
-  </main>
+    </main>
 </template>
 
 <script>

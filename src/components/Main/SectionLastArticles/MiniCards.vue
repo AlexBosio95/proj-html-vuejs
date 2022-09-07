@@ -83,6 +83,7 @@ export default {
         .description{
             width: 70%;
             padding-left: 1rem;
+            overflow: hidden;
 
                 a{
                 color: $goldenrod;

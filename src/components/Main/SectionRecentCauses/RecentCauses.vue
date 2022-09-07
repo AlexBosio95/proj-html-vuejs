@@ -13,11 +13,9 @@
                     :pathImg = 'image.pathImg'
                     :alt = 'image.alt' 
                     />
-
                 </div>
-
         </div>
-                <button>VIEW ALL OUR CAUSES</button>
+        <button>VIEW ALL OUR CAUSES</button>
 
     </div>
     
@@ -59,7 +57,6 @@ export default {
                     alt: 'charity-vaccines'
                 },
             ]
-
         }
     }
     
@@ -83,6 +80,7 @@ export default {
         padding: 3rem 0rem;
         background-color: $Burnt-sienna;
         color: $white;
+        text-transform: uppercase;
     }
 
 </style>
