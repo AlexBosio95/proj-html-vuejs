@@ -2,7 +2,8 @@
   <div id="app">
     <Header />
     <Main 
-    :articlesList = 'articlesList'/>
+    :articlesList = 'articlesList'
+    :articlesListAll = 'articlesListAll'/>
     <Footer />
   </div>
 </template>
@@ -24,7 +25,8 @@ export default {
   data: function(){
     return{
 
-      articlesList: []
+      articlesList: [],
+      articlesListAll: []
     }
   },
 
@@ -33,9 +35,15 @@ export default {
         getArticle(){
           axios.get('https://newsapi.org/v2/top-headlines?country=it&apiKey=8d1549fdace743848d7f961305b0de09')
           .then((result) =>{
-            this.articlesList = result.data.articles
+            this.articlesListAll = result.data.articles
+            console.log(this.articlesListAll)
+            this.articlesList = this.articlesListAll.slice(0, 5)
+
+            console.log(this.articlesList)
+            
           })
         }
+        
       },
 
     created(){

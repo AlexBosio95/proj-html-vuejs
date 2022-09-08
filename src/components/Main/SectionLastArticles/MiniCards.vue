@@ -10,7 +10,7 @@
         </div>
         
     </div>
-  
+
 </template>
 
 <script>
@@ -37,12 +37,9 @@ export default {
                     return item.substr(0,65) + '...'
                 }
             }
-
-                
         },
 
         getFormatDescription(item){
-
             if (item != null) {
 
                 if(item.length > 20){

@@ -9,6 +9,7 @@
 
         <LatestArticles 
         :articlesList = 'articlesList'
+        :articlesListAll = 'articlesListAll'
         />
 
         <ChangeLife />
@@ -33,6 +34,7 @@ export default {
     },
     props:{
         articlesList: Array,
+        articlesListAll: Array,
     }
 
 }

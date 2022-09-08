@@ -1,10 +1,10 @@
 <template>
-  <div class="container" id="journal">
-      <!-- Layout with Title and Description -->
-      <Title 
-      :dataTitle = 'dataTitle'
-      />
-      <div class="card-container">
+    <div class="container" id="journal">
+        <!-- Layout with Title and Description -->
+        <Title 
+        :dataTitle = 'dataTitle'
+        />
+        <div class="card-container">
         <div class="row ">
             <div class="col-12">
                     <BigCard 
@@ -12,24 +12,30 @@
                 
             </div>
 
-            <div class="col-12 d-flex flex-column g-4">
-
-                <MiniCards v-for="(article, index) in articlesList" :key="index"
-
+            <div v-if="!allArticles" class="col-12 d-flex flex-column g-4">
+                <MiniCards v-for="(article, id) in articlesList" :key="id"
                     :description = 'article.description'
                     :title = 'article.title'
                     :urlToImage = 'article.urlToImage'
                     :url = 'article.url'
-                
                 />
-
             </div>
+
+            <div v-if="allArticles" class="col-12 d-flex flex-column g-4">
+                <MiniCards v-for="(article, id) in articlesListAll" :key="id"
+                    :description = 'article.description'
+                    :title = 'article.title'
+                    :urlToImage = 'article.urlToImage'
+                    :url = 'article.url'
+                />
+            </div>
+
         </div>
 
-            <button>view all our articles</button>
+            <button @click="allArticles = !allArticles">view all our articles</button>
 
-      </div>
-  </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -48,12 +54,13 @@ export default {
 
     props:{
         articlesList: Array,
+        articlesListAll: Array,
     },
     
     data: function(){
         return{
 
-            numberArticlesShow: 5,
+            allArticles: false,
 
             dataTitle: 
                 {
@@ -85,11 +92,9 @@ export default {
                     title: 'Meeting remote tribes in Peru',
                     imgPath: 'photo-1460600421604-5e138c208b9c-177x142.jpg'
                 },
-
             ],
 
             dataBigSlide: 
-
                 {
                     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Prasent ac nibh vestibulum, laoreet ipsum.',
                     title: 'Understanding community complexities',
@@ -98,8 +103,17 @@ export default {
         
 
     }
+    },
+    methods:{
+        getArray(){
+            // if (allArticles == true) {
+            //     return articlesListAll
+            // } else {
+            //     return articlesList
+            // }
 
-        
+            return articlesList
+        }
     }  
 }
 
@@ -112,7 +126,6 @@ export default {
 .card-container{
     padding: 5rem 13rem;
 
-   
 
     button{
         width: 100%;
