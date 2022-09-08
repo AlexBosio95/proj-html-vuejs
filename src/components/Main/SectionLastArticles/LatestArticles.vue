@@ -32,7 +32,7 @@
 
         </div>
 
-            <button @click="allArticles = !allArticles">view all our articles</button>
+            <button @click="allArticles = !allArticles">{{getText()}}</button>
 
         </div>
     </div>
@@ -105,16 +105,14 @@ export default {
     }
     },
     methods:{
-        getArray(){
-            // if (allArticles == true) {
-            //     return articlesListAll
-            // } else {
-            //     return articlesList
-            // }
-
-            return articlesList
+        getText(){
+            if (!this.allArticles) {
+                return 'View all our articles'
+            } else {
+                return 'reduce articles'
+            }
         }
-    }  
+    }
 }
 
 </script>
